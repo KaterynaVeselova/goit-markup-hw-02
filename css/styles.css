@@ -19,6 +19,7 @@ body {
 	font-family: Roboto, sans-serif;
 	font-size: 14px;
 	line-height: 1.19;
+	letter-spacing: 0.03em;
 }
 .list {
 	list-style: none;
@@ -37,7 +38,6 @@ body {
 	font-family: Raleway;
 	font-weight: 700;
 	font-size: 26px;
-	line-height: 1.23;
 }
 .link .logo-web {
 	color: var(--accent-color);
@@ -50,6 +50,7 @@ body {
 	color: var(--secondary-header-color);
 	font-weight: 500;
 	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 .header-nav .link:hover,
 .header-nav .link:focus {
@@ -60,6 +61,7 @@ body {
 .header-contacts .link {
 	font-weight: 500;
 	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 .header-contacts .link:hover,
 .header-contacts .link:focus {
@@ -70,22 +72,27 @@ body {
 
 /* main content styles */
 /* hero styles */
-
+.hero {
+	/*This rule has been added after mentor had insisted on positioning button towards the h1 in hero */
+	text-align: center;
+	background-color: var(--hero-bcg-color);
+}
 .hero .hero-title {
 	color: var(--main-header-color);
-	background-color: var(--hero-bcg-color);
 
 	text-transform: uppercase;
-	text-align: center;
+	/* text-align: center; */
 	align-content: center;
 
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
+	letter-spacing: 0.06em;
 }
 .hero .hero-btn {
 	width: 200px;
 	height: 50px;
+
 	border-radius: 4px;
 	border: 1px;
 
@@ -95,10 +102,12 @@ body {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
+	letter-spacing: 0.02em;
 }
 .hero .hero-btn:hover,
 .hero .hero-btn:focus {
 	background-color: var(--btn-hover-color);
+	cursor: pointer;
 	/* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
 	/* box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.15); */
 }
@@ -139,6 +148,7 @@ body {
 /* team styles */
 .team {
 	background-color: var(--secondary-bcg-color);
+	text-align: center;
 }
 .team-item .item-card {
 	width: 270px;
@@ -146,7 +156,6 @@ body {
 	border-radius: 0px 0px 4px 4px;
 
 	background-color: var(--main-bcg-color);
-
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-item .item-header {
@@ -196,10 +205,24 @@ body {
 
 	color: var(--secondary-header-color);
 
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.63;
+	text-align: center;
 }
-
+.btn.width-btn1 {
+	width: 70px;
+}
+.btn.width-btn2,
+.btn.width-btn5 {
+	width: 130px;
+}
+.btn.width-btn3 {
+	width: 145px;
+}
+.btn.width-btn4 {
+	width: 100px;
+}
 .filter .btn:hover,
 .filter .btn:active {
 	color: var(--main-header-color);
@@ -217,10 +240,14 @@ body {
 
 	background-color: var(--main-bcg-color);
 }
+.project-item .link {
+	cursor: auto;
+}
 .project-item .item-header {
 	color: var(--secondary-header-color);
 	font-size: 18px;
 	line-height: 2;
+	letter-spacing: 0.02em;
 }
 .project-item .item-desc {
 	font-size: 16px;
