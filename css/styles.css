@@ -12,6 +12,7 @@
 	--footer-contacts-color: rgba(255, 255, 255, 0.6);
 	--footer-bcg-color: #2f303a;
 }
+
 /* common styles*/
 body {
 	color: var(--main-text-color);
@@ -39,11 +40,19 @@ body {
 	font-weight: 700;
 	font-size: 26px;
 }
-.link .logo-web {
+/* .link .logo-web {
 	color: var(--accent-color);
 }
 .link .logo-studio {
 	color: var(--nav-text-color);
+} */
+
+.logo-name {
+	color: var(--accent-color);
+}
+.logo-part {
+	color: var(--nav-text-color);
+	margin-left: -5px;
 }
 
 .header-nav .link {
@@ -99,6 +108,7 @@ body {
 	color: var(--main-header-color);
 	background-color: var(--accent-color);
 
+	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
@@ -146,7 +156,7 @@ body {
 }
 
 /* team styles */
-.team {
+.section.accent {
 	background-color: var(--secondary-bcg-color);
 	text-align: center;
 }
@@ -180,7 +190,10 @@ body {
 	font-weight: 700;
 	font-size: 26px;
 }
-.footer .logo-studio {
+/* .footer .logo-studio {
+	color: var(--main-header-color);
+} */
+.footer .logo-part {
 	color: var(--main-header-color);
 }
 .address-item .link {
@@ -205,23 +218,11 @@ body {
 
 	color: var(--secondary-header-color);
 
+	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.63;
 	text-align: center;
-}
-.btn.width-btn1 {
-	width: 70px;
-}
-.btn.width-btn2,
-.btn.width-btn5 {
-	width: 130px;
-}
-.btn.width-btn3 {
-	width: 145px;
-}
-.btn.width-btn4 {
-	width: 100px;
 }
 .filter .btn:hover,
 .filter .btn:active {
@@ -230,7 +231,6 @@ body {
 
 	cursor: pointer;
 }
-
 .project-item {
 	width: 370px;
 	height: 400px;
