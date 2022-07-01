@@ -210,19 +210,20 @@ body {
 
 /* PORTFOLIO styles */
 
-.filter .btn,
-.filter .btn {
+.btn {
 	height: 40px;
 	border-radius: 4px;
 	border: 1px;
 
 	color: var(--secondary-header-color);
+	background-color: var(--secondary-bcg-color);
 
 	font-family: inherit;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.63;
 	text-align: center;
+	/* display: inline; */
 }
 .filter .btn:hover,
 .filter .btn:active {
@@ -240,9 +241,9 @@ body {
 
 	background-color: var(--main-bcg-color);
 }
-.project-item .link {
+/* .project-item .link {
 	cursor: auto;
-}
+} */
 .project-item .item-header {
 	color: var(--secondary-header-color);
 	font-size: 18px;
